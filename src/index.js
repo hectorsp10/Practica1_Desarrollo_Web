@@ -10,11 +10,12 @@ import './styles/Header/SearchBarStyle.css'
 import './styles/Header/AccountStyle.css'
 import Header from './components/Header/Header'
 import reportWebVitals from './reportWebVitals';
+import SearchView from "./views/SearchView";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Header />
+    <SearchView />
   </React.StrictMode>
 );
 
