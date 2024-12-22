@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './index.css';
-import App from './App';
+import './styles/main.css'
+import './styles/Header/BtnCartStyle.css'
+import './styles/Header/NavBarStyle.css'
+import './styles/Header/SearchBarStyle.css'
+import './styles/Header/AccountStyle.css'
+import Header from './components/Header/Header'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Header />
   </React.StrictMode>
 );
 
