@@ -8,7 +8,10 @@ import './styles/Header/BtnCartStyle.css'
 import './styles/Header/NavBarStyle.css'
 import './styles/Header/SearchBarStyle.css'
 import './styles/Header/AccountStyle.css'
-import Header from './components/Header/Header'
+import './styles/Footer/FooterDisplayStyle.css'
+import './styles/Footer/Footer.css'
+import './styles/ProductDisplay/ProductCardStyle.css'
+import './styles/Views/SearchViewStyle.css'
 import reportWebVitals from './reportWebVitals';
 import SearchView from "./views/SearchView";
 
