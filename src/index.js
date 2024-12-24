@@ -14,12 +14,16 @@ import './styles/ProductDisplay/ProductCardStyle.css'
 import './styles/Views/SearchViewStyle.css'
 import './styles/SearchFilters/SearchFiltersStyle.css'
 import reportWebVitals from './reportWebVitals';
+import App from './App';
 import SearchView from "./views/SearchView";
+import {BrowserRouter} from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SearchView />
+      <BrowserRouter>
+          <App />
+      </BrowserRouter>
   </React.StrictMode>
 );
 

@@ -2,6 +2,7 @@
     width: 100%;
     height: 400px;
     justify-items: center;
+    padding-top: 10px;
 }
 
 .productcard-container:hover {
