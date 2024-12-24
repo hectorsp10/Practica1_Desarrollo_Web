@@ -1,10 +1,25 @@
 .productcard-container {
-    border: 1px solid black;
-    margin-bottom: 15px;
     width: 100%;
-    border-radius: 10px;
+    height: 400px;
+    justify-items: center;
+}
+
+.productcard-container:hover {
+    background-color: #fdfdfd;
+    border: #eaeaea 1px solid;
+}
+
+.productcard-image-container {
+    height: 200px;
+    margin-bottom: 10px;
+    justify-self: center;
 }
 
 .productcard-image {
-    max-height: 300px;
+    height: 200px;
+    width: auto;
+}
+
+.productcard-author {
+    font-size: 12px;
 }

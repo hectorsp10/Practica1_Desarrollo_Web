@@ -12,6 +12,7 @@ import './styles/Footer/FooterDisplayStyle.css'
 import './styles/Footer/Footer.css'
 import './styles/ProductDisplay/ProductCardStyle.css'
 import './styles/Views/SearchViewStyle.css'
+import './styles/SearchFilters/SearchFiltersStyle.css'
 import reportWebVitals from './reportWebVitals';
 import SearchView from "./views/SearchView";
 
