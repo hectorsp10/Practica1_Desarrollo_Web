@@ -28,12 +28,15 @@ export const CartProvider = ({ children }) => {
             updatedCart[productIndex].quantity += 1;
             setCart(updatedCart);
             localStorage.setItem("cart", JSON.stringify(updatedCart));
+            console.log("Cart after:", updatedCart);
         } else {
             // Si no está en el carrito, lo añadimos con cantidad 1
             const updatedCart = [...cart, { ...product, quantity: 1 }];
             setCart(updatedCart);
             localStorage.setItem("cart", JSON.stringify(updatedCart));
+            console.log("Cart after:", updatedCart);
         }
+        console.log("Cart before:", cart);
     }
 
     const removeFromCart = (index) => {
