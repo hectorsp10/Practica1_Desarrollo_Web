@@ -8,11 +8,12 @@ import './styles/Header/BtnCartStyle.css'
 import './styles/Header/NavBarStyle.css'
 import './styles/Header/SearchBarStyle.css'
 import './styles/Header/AccountStyle.css'
-import './styles/Footer/FooterDisplayStyle.css'
-import './styles/Footer/Footer.css'
-import './styles/ProductDisplay/ProductCardStyle.css'
-import './styles/Views/SearchViewStyle.css'
-import './styles/SearchFilters/SearchFiltersStyle.css'
+import './styles/Footer/FooterDisplayStyle.css';
+import './styles/Footer/Footer.css';
+import './styles/ProductDisplay/ProductCardStyle.css';
+import './styles/Views/SearchViewStyle.css';
+import './styles/SearchFilters/SearchFiltersStyle.css';
+import './styles/ProductDetail/ProductDeatailStyle.css'
 import reportWebVitals from './reportWebVitals';
 import App from './App';
 import SearchView from "./views/SearchView";
