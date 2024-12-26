@@ -18,7 +18,6 @@ import './styles/Cart/CartProductStyle.css'
 import './styles/Cart/CartStyle.css'
 import reportWebVitals from './reportWebVitals';
 import App from './App';
-import SearchView from "./views/SearchView";
 import {BrowserRouter} from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

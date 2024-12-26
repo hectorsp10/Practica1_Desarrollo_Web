@@ -16,14 +16,13 @@ function CartProduct({Id, Description, Name, Image, Price, Author, Quantity, pro
                     <div className="col-lg-10">
                         <h3 className="mt-2">{Name}</h3>
                         <p>{Author}</p>
-                        <p>{Quantity}</p>
+                        <p>Cantidad: {Quantity}</p>
                         <BtnRemoveFromCart product={product}/>
                     </div>
                     <div className="col-lg-2">
                         <p className="productdetail-price text-end">{Price}€</p>
                     </div>
                 </div>
-
             </div>
         </div>
     );

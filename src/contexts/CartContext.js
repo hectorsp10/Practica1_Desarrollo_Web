@@ -57,8 +57,15 @@ export const CartProvider = ({ children }) => {
         }
     }
 
+    const cleanCart = () => {
+
+        localStorage.clear();
+        const updatedCart = [...cart];
+        setCart(updatedCart);
+    }
+
     return (
-        <CartContext.Provider value = {{ cart, addToCart, removeFromCart }}>
+        <CartContext.Provider value = {{ cart, addToCart, removeFromCart, cleanCart }}>
             {children}
         </CartContext.Provider>
     );
