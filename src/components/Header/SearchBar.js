@@ -1,4 +1,5 @@
-import React, {useState} from "react";
+import React, {useContext, useState} from "react";
+import { SearchContext } from "../../contexts/SearchContext";
 
 function SearchBar() {
 
@@ -7,6 +8,11 @@ function SearchBar() {
     const handleSelect = (option) => {
         setSelectedOption(option);
     };
+
+    const { setSearchTerm } = useContext(SearchContext);
+    const handleSearch = (e) => {
+        setSearchTerm(e.target.value);
+    }
 
     return (
         <div>
@@ -43,7 +49,7 @@ function SearchBar() {
                             </button>
                         </li>
                     </ul>
-                    <input type="text" className="searchbar-input" placeholder="Search..."/>
+                    <input type="text" className="searchbar-input" onChange={handleSearch} placeholder="Search..."/>
                 </div>
             </form>
         </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { useCart } from "../../CartContext"
+import { useCart } from "../../contexts/CartContext"
 
 function BtnAddToChart({ product}) {
 
@@ -7,7 +7,7 @@ function BtnAddToChart({ product}) {
 
     return(
         <button onClick={() => addToCart(product)} className="btn btn-addtochart">
-            Add to chart
+            Add to cart
         </button>
     )
 }

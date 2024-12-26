@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import ProductCard from './ProductCard';
+import { SearchContext } from "../../contexts/SearchContext";
 
 function ProductsDisplay() {
+    const { searchTerm } = useContext(SearchContext);
 
     const products = [
         { Id: "1", Name: "Las 48 leyes del poder", Author: "Robert Greene", Image: "https://m.media-amazon.com/images/I/61tHXwnTDiL._AC_UF350,350_QL50_.jpg", Price: "10" },
@@ -15,10 +17,22 @@ function ProductsDisplay() {
         { Id: "9", Name: "21 lecciones para el siglo 21", Author: "Yuval Noah Harari", Image: "https://m.media-amazon.com/images/I/61YbVoSdhnL._AC_UF1000,1000_QL80_.jpg", Price: "10" },
     ]
 
+    // filteredProducts recoge los products que coinciden con el filtro de búsqueda
+    const filteredProducts = products.filter(product => {
+        // si hay algo escrito en la barra de búsqueda
+        if (searchTerm) {
+            return product.Name.toLowerCase().includes(searchTerm.toLowerCase());
+        }
+        else{
+            return true
+        }
+    });
+    console.log("filteredproducts: ", filteredProducts);
+
     return (
         <div className="productdisplay-container">
             <div className="row p-0 m-0">
-                {products.map((product, index) => (
+                {filteredProducts.map((product, index) => (
                     // Para definir la cantidad de tarjetas por fila
                     <div className="col-lg-3 col-md-5 col-sm-7 p-0 m-0" key={index}>
                         <ProductCard

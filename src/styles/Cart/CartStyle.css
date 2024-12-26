@@ -1,0 +1,13 @@
+.cart-header {
+    border-bottom: #282c34 1px solid;
+    margin-bottom: 20px;
+}
+
+.cart-header-pricetext {
+    font-size: 14px;
+    margin-right: 20px;
+    flex-shrink: unset;
+}
+.cart-row2 {
+    height: 20px;
+}

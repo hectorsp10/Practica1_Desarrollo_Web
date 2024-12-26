@@ -14,6 +14,8 @@ import './styles/ProductDisplay/ProductCardStyle.css';
 import './styles/Views/SearchViewStyle.css';
 import './styles/SearchFilters/SearchFiltersStyle.css';
 import './styles/ProductDetail/ProductDeatailStyle.css'
+import './styles/Cart/CartProductStyle.css'
+import './styles/Cart/CartStyle.css'
 import reportWebVitals from './reportWebVitals';
 import App from './App';
 import SearchView from "./views/SearchView";
