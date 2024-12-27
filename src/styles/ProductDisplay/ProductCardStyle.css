@@ -24,3 +24,9 @@
 .productcard-author {
     font-size: 12px;
 }
+
+.productcard-name {
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}

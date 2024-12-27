@@ -20,9 +20,9 @@ function SearchFilters() {
             <div className="searchfilters-keywords">
                 <p className="searchfilters-title mb-2">Filtros</p>
                 <div className="searchfilters-filter-buttons">
-                    <button className="searchfilters-filter-button btn p-0">1</button>
-                    <button className="searchfilters-filter-button btn p-0">2</button>
-                    <button className="searchfilters-filter-button btn p-0">3</button>
+                    <button className="searchfilters-filter-button btn">Adultos</button>
+                    <button className="searchfilters-filter-button btn">Juvenil</button>
+                    <button className="searchfilters-filter-button btn">Infantil</button>
                 </div>
             </div>
             <div className="searchfilters-price">

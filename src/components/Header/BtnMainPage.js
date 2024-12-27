@@ -9,7 +9,7 @@ function BtnMainPage() {
     };
 
     return (
-        <button className="btn-mainpage" onClick={handleClick}>
+        <button className="btn-mainpage btn btn-primary" onClick={handleClick}>
             Página principal
         </button>
     );

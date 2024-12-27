@@ -18,7 +18,6 @@ export const CartProvider = ({ children }) => {
     }, []);
 
     const addToCart = (product) => {
-
         // Verificamos si el producto ya existe en el carrito
         const productIndex = cart.findIndex(item => item.id === product.id);
 
@@ -53,14 +52,12 @@ export const CartProvider = ({ children }) => {
                 setCart(updatedCart);
                 localStorage.setItem("cart", JSON.stringify(updatedCart));
             }
-
         }
     }
 
     const cleanCart = () => {
-
-        localStorage.clear();
-        const updatedCart = [...cart];
+        localStorage.removeItem("cart");
+        const updatedCart = [];
         setCart(updatedCart);
     }
 

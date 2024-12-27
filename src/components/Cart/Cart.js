@@ -11,7 +11,7 @@ function Cart() {
     const navigate = useNavigate();
     const handleClick = () => {
         cleanCart();
-        navigate(`/home`);
+        navigate("/paid");
     };
 
     if (cart.length === 0) {

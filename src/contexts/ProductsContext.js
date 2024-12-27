@@ -44,7 +44,7 @@ export const ProductProvider = ({ children }) => {
             Author: "Marco Aurelio",
             Image: "https://m.media-amazon.com/images/I/61iMxtIaXqL._AC_UF894,1000_QL80_.jpg",
             Price: 10 },
-        7: {id: 7, Name: "Don La psicología del dinero",
+        7: {id: 7, Name: "La psicología del dinero",
             Description: "asdfgh",
             Author: "Morgan Housel",
             Image: "https://ellector.com.pa/cdn/shop/files/9789584299680.jpg?v=1701266620",

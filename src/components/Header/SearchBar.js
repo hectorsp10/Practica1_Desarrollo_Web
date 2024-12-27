@@ -12,6 +12,8 @@ function SearchBar() {
     const { setSearchTerm } = useContext(SearchContext);
     const handleSearch = (e) => {
         setSearchTerm(e.target.value);
+
+
     }
 
     return (
@@ -41,11 +43,6 @@ function SearchBar() {
                         <li>
                             <button className="dropdown-item" type="button"
                                     onClick={() => handleSelect("No ficción")}>No ficción
-                            </button>
-                        </li>
-                        <li>
-                            <button className="dropdown-item" type="button"
-                                    onClick={() => handleSelect("Infantil")}>Infantil
                             </button>
                         </li>
                     </ul>

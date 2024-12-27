@@ -6,6 +6,7 @@ import CartView from "./views/CartView";
 import LandingView from "./views/LandingView";
 import {SearchProvider} from "./contexts/SearchContext";
 import {ProductProvider} from "./contexts/ProductsContext";
+import PaidView from "./views/PaidView";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
                       <Route path="/home" element={<SearchView />} />
                       <Route path="/product/:id" element={<ProductDetailView />} />
                       <Route path="/cart" element={<CartView />} />
+                      <Route path="/paid" element={<PaidView />} />
                   </Routes>
               </SearchProvider>
           </CartProvider>

@@ -8,7 +8,8 @@ function ProductDetail() {
     const { products } = useProducts();
 
     const product = products[id] || "product not found.";
-
+    console.log("id",id);
+    console.log(products);
     return (
         <div className="row product-detail">
             <div className="col-lg-3 col-md-6">
@@ -23,6 +24,7 @@ function ProductDetail() {
             </div>
         </div>
     );
+
 }
 
 export default ProductDetail;
